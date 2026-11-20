@@ -1,4 +1,4 @@
-# wmcl-glfw
+# WMCL-GLFW
 
 A single-window GLFW implementation for Android, built for WMCL. It exposes the
 complete `glfw*` symbol table that the official LWJGL 3.3.3 bindings resolve
@@ -60,11 +60,11 @@ gamepads report `GLFW_FEATURE_UNAVAILABLE` instead of pretending to work.
 
 ```bash
 # With the Android NDK
-scripts/build-android.sh --out /tmp/wmcl-glfw \
+scripts/build-android.sh --out /tmp/WMCL-GLFW \
   --glfw-headers /path/to/glfw-3.4/include --ndk /path/to/android-ndk-r27
 
 # With an existing Android arm64 sysroot (links against a real Bionic libc)
-scripts/build-android.sh --out /tmp/wmcl-glfw \
+scripts/build-android.sh --out /tmp/WMCL-GLFW \
   --glfw-headers /path/to/glfw-3.4/include \
   --sysroot /path/to/sysroot --bionic-libc /path/to/sysroot/lib/libc.so
 ```
